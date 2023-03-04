@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-import uniqid from 'uniqid';
-import gameItem from './gameItem';
 
 const GameContainer = props => {
     const [lostOrNo, setLostOrNo] = useState(false);
@@ -30,9 +28,21 @@ const GameContainer = props => {
 
         return (
             cards.map((card) => {
-                return <Card key={card.id} id={card.id} valid={card.valid}/>
+                return <Card key={card.id} id={card.id} valid={card.valid} changeArray={changeArray}/>
             })
         )
+    }
+
+    const changeArray = (valid) => {
+        if (valid === false) {
+            props.updateState('score', 0);
+            setLostOrNo(true);
+        } else {
+            props.updateState('score', props.score + 1);
+            if (lostOrNo) {
+                setLostOrNo(false);
+            }
+        }
     }
 
     return (

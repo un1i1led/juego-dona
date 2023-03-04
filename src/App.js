@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import GameContainer from './components/GameContainer';
+import TopBar from './components/Topbar';
+import './style.css';
 
 const App = () => {
   const [bestScore, setBestScore] = useState(0);
@@ -15,7 +18,10 @@ const App = () => {
 
   return (
     <div className='App'>
-
+      <TopBar score={score} bestScore={bestScore}/>
+      <div className='main'>
+        <GameContainer score={score} updateState={updateState}/>
+      </div>
     </div>
   )
 

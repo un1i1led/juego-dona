@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    font-family: 'Noto Sans Lepcha', sans-serif;
+}
+
+.main,
+.top-bar,
+nav {
+    background-color: #348c3d;
+    color: white;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(95, 170, 102);
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    width: 41%;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    width: 41%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+nav li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-right,
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right:last-child {
+    padding-right: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.top-bar {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 650px;
+}
+
+.info-div:first-of-type {
+    margin-top: 20px;
+}

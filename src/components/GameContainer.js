@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 
 const GameContainer = props => {
@@ -47,7 +47,9 @@ const GameContainer = props => {
 
     return (
         <div className='game-container'>
-            {cardOrder()}
+            <div className='cards'>
+                {cardOrder()}
+            </div>
         </div>
     )
 }

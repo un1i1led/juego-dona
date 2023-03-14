@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/juego-dona/static/css/main.d53c5ea5.css",
+    "main.js": "/juego-dona/static/js/main.114137a1.js",
+    "index.html": "/juego-dona/index.html",
+    "main.d53c5ea5.css.map": "/juego-dona/static/css/main.d53c5ea5.css.map",
+    "main.114137a1.js.map": "/juego-dona/static/js/main.114137a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53c5ea5.css",
+    "static/js/main.114137a1.js"
+  ]
+}

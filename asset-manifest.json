@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/juego-dona/static/css/main.2ba04015.css",
-    "main.js": "/juego-dona/static/js/main.f412945d.js",
+    "main.css": "/juego-dona/static/css/main.a1c825bd.css",
+    "main.js": "/juego-dona/static/js/main.253ad18a.js",
+    "static/media/camisa_conf2.png": "/juego-dona/static/media/camisa_conf2.6660e9ee91bc4f9bf3de.png",
+    "static/media/zapato_conf2.png": "/juego-dona/static/media/zapato_conf2.361a2b9047151612da16.png",
+    "static/media/p_conf1.png": "/juego-dona/static/media/p_conf1.b3c46842c5e8e3a2e064.png",
     "index.html": "/juego-dona/index.html",
-    "main.2ba04015.css.map": "/juego-dona/static/css/main.2ba04015.css.map",
-    "main.f412945d.js.map": "/juego-dona/static/js/main.f412945d.js.map"
+    "main.a1c825bd.css.map": "/juego-dona/static/css/main.a1c825bd.css.map",
+    "main.253ad18a.js.map": "/juego-dona/static/js/main.253ad18a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ba04015.css",
-    "static/js/main.f412945d.js"
+    "static/css/main.a1c825bd.css",
+    "static/js/main.253ad18a.js"
   ]
 }

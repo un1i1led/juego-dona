@@ -61,8 +61,17 @@ const GameContainer = props => {
         if (valid === false) {
             props.updateState('score', 0);
             setLostOrNo(true);
+
+            let cards = document.getElementsByClassName('card');
+            for (let i = 0; i < cards.length; i++) {
+              cards[i].style.backgroundColor = 'rgb(244, 70, 70)';
+            }
         } else {
             props.updateState('score', props.score + 1);
+            let cards = document.getElementsByClassName('card');
+            for (let i = 0; i < cards.length; i++) {
+              cards[i].style.backgroundColor = 'rgb(95, 170, 102)';
+            }
             if (lostOrNo) {
                 setLostOrNo(false);
             }

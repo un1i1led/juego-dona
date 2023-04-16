@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GameContainer from './components/GameContainer';
 import Nav from './components/Nav';
 import TopBar from './components/Topbar';
@@ -9,13 +9,19 @@ const App = () => {
   const [score, setScore] = useState(0);
 
   const updateState = (state, value) => {
-    if (state == 'score') {
+    if (state === 'score') {
       setScore(value);
       if (bestScore <= value) {
         setBestScore(value);
+        localStorage.setItem('bestScore', value);
       }
     }
   };
+
+  useEffect(() => {
+    let bestScore = localStorage.getItem('bestScore');
+    setBestScore(bestScore);
+  }, []);
 
   return (
     <div className='App'>
